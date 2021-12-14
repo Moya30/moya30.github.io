@@ -1,0 +1,207 @@
+html{
+
+    box-sizing: border-box;/* PARA AGREGAR UN WIDTH Y PADDING NO MODIFIQUE el elemento*/
+    font-size: 62.5%;/* de esta forma 1 rem = 10px */
+}
+/*parte del box-sizing en todo los proyectos*/
+*, *:before,*:after{
+box-sizing: inherit;
+}
+
+/* fuentes */
+
+body{
+    font-family:'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2; /* interlineado en el texto*/
+}
+h1,h2,h3{
+    font-family: 'Playfair Display',serif;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+/** GLOBALES */
+
+a{
+    text-decoration: none;
+    color: #000;
+
+}
+.contenedor{
+    max-width: 120rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+   /* es lo mismo ↓ de forma resumida */ 
+    margin: 0 auto 0 auto;
+    /* lo mismo */
+    margin: 0 auto;
+    /* nuevas versiones para lo mismo */
+    
+   margin-inline: auto;
+
+}
+
+/** HEADER Y NAVEGACION **/
+
+
+h1{
+ color: #000;
+}
+
+.nombre-sitio {
+ 
+ /** separacion **/
+ margin-top:   5rem;
+ margin-bottom:   5rem;
+ font-size: 4rem;
+ /* posicionar un texto*/
+
+ text-align: center;
+}
+.nombre-sitio span {
+    color: darkorange;
+   }
+
+.contenedor-navegacion{
+
+    border-top: 1px solid #e1e1e1;
+}
+.nav-principal{
+  /*border-color: #e1e1e1;
+  border-top-style: solid;
+  border-width: 1px; */
+  /* segunda forma ↑  */
+ 
+  /* padding: 50px 0 30px 20px; */
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  
+}
+img{
+    max-width: 100%; /* para que se ajuste a la caja*/
+    display: block; /* para quitar los espacios entre div y la img */
+
+}
+.hero{
+    background-image: url(img/jjj.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+height: 48rem;
+
+}
+
+/* UTILIDADES*/
+
+.text-center{
+    text-align: center;
+}
+
+/* categorias */
+
+
+.categoria a:hover{
+    background-color:rgb(152, 167, 19);
+    color: papayawhip;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size:2rem ;
+}
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+
+/** BLOQUE NOSOTROS */
+
+.sobre-nosotros{
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%,#037bc0 
+    100% ), url(img/tesla_cybercar-wallpaper-960x600.jpg);
+    padding: 10rem 0;/* padding arriba y abajo y izquierda y derecha*/
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%,120rem;
+
+}
+
+.sobre-nosotros-grid{
+    display: flex;
+ /* display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 5rem;*/ 
+  /* lo mismo css grid */
+  justify-content: flex-end;
+
+}
+.texto-nosotros{
+   /* grid-column: 2/3; */
+   flex-basis: 50%;
+   padding-left: 8rem;
+   color: #FFFF;
+}
+
+/* Listado de productos */
+
+.contenido-principal{
+    padding-top: 5rem;
+}
+.producto{
+    background-color:#037bc0 ;
+}
+.texto-producto {
+text-align: center;
+color: #FFFF;
+}
+
+.texto-producto h3{
+    margin: 0;
+}
+
+.texto-producto p{
+    margin: 0 0 0.5rem 0;
+}
+.texto-producto .precio {
+ font-size: 2.8rem;
+ font-weight: 900;
+}
+ 
+
+.btn{
+    /* apariencia de un boton */
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    /* animaciones ↓ */
+    transition: background-color .3s ease-out;
+}
+
+
+.btn:hover{
+    background-color: #769c02;
+}
+
+.producto img:hover{
+ transform: scale(.8);
+}
