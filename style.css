@@ -208,9 +208,17 @@ color: #FFFF;
 }
 .producto:nth-child(1){
     grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     /* segunda forma*/
     /* grid-colum-start:1*/
     /* grid-colum-end:7*/
+}
+
+.producto:nth-child(1) img{
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
 }
 .producto:nth-child(2){
     grid-column-start: 1;
@@ -237,6 +245,3 @@ color: #FFFF;
     background-color: #769c02;
 }
 
-.producto img:hover{
- transform: scale(.8);
-}
