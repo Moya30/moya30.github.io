@@ -273,6 +273,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  padding-left: 7rem;
 }
 
 .site-footer h3 {
@@ -286,4 +287,50 @@ img {
 .footer-menu a {
   display: block;
   color: green;
+}
+
+/* nosotros */
+
+.contenido-nosotros{
+  display: grid;
+  grid-template-columns: 1fr,2fr;
+  grid-template-columns: repeat(auto-fit,minmax(32rem,1fr));
+  column-gap: 4rem;
+}
+
+.informacion-nosotros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* blog */
+
+.contenedor-blog{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;
+
+}
+
+.entrada{
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+  border: none;
+}
+
+.entrada-meta{
+  display: flex;
+  justify-content: space-between;
+}
+.entrada-meta p{
+ font-weight:black;
+
+}
+.entrada-meta span{
+color: brown;
 }
