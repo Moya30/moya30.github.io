@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="nombre-sitio">Tienda <span>Autos</span></h1>
+    </header>
+    <div class="contenedor-navegacion">
+      <nav class="nav-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="nostros.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="blog.html">blog</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+    <!-- Esto es un comentario -->
+    <main class="contenido-principal contenedor">
+      <h2 class="text-center">Contacto</h2>
+      <!-- formulario de contacto -->
+
+      <form action="">
+        <fieldset>
+          <legend>Tus datos</legend>
+          <div class="campo">
+            <label for="nomb"> Nombre: </label>
+            <input id="nomb" type="text" placeholder="coloca tu nombre" />
+          </div>
+
+          <div class="campo">
+            <label for="asunto"> Asunto: </label>
+            <input id="asunto" type="text" placeholder="tu asunto" />
+          </div>
+
+          <div class="campo">
+            <label for="email"> Email : </label>
+            <input id="email" type="email" placeholder="tu email" />
+          </div>
+
+          <div class="campo">
+            <label for="tel"> Teléfono : </label>
+            <input id="tel" type="tel" placeholder="tu telefono" />
+          </div>
+          <div class="campo">
+            <label for="mensaje"> Mensaje : </label>
+            <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>País</legend>
+
+          <div class="campo">
+             <label for="pais"> País </label>
+
+             <select id="pais">
+                 <option  value="Mx"> -- selecione -- </option>
+                 <option  value="Mx"> Perú </option>
+                 <option value="Mx"> Mexico </option>
+                 <option value="Mx"> Brasil </option>
+                 <option value="Mx"> Chile </option>
+                 <option value="Mx"> Bolivia </option>
+                 <option value="Mx"> Ecuador </option>
+             </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Info extra</legend>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="grid-footer contenedor">
+        <div>
+          <h3>Categorias</h3>
+          <nav class="footer-menu">
+            <a href="#">Cocina</a>
+            <a href="#">Oficina</a>
+            <a href="#">Jardin</a>
+            <a href="#">Cochera</a>
+            <a href="#">Dormitorio</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Sobre nosotros</h3>
+          <nav class="footer-menu">
+            <a href="#">Nuestra historia</a>
+            <a href="#">Mision, vision y valores</a>
+            <a href="#">Carreras</a>
+            <a href="#">Politicas de privacidad</a>
+            <a href="#">Terminos del servicio</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Soporte</h3>
+          <nav class="footer-menu">
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Ayuda en linea</a>
+            <a href="#">Compras seguras</a>
+          </nav>
+        </div>
+      </div>
+      <p class="copryrigth">
+        Todos los derechos reservados, tienda autos - Moya @ 2021
+      </p>
+    </footer>
+  </body>
+</html>
